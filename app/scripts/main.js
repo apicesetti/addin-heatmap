@@ -519,7 +519,10 @@ geotab.addin.heatmap = () => {
         navigator.geolocation.getCurrentPosition(position => {
           initializeInterface(position.coords);
           callback();
-        });
+        }, () => {
+          initializeInterface({ longitude: -79.709441, latitude: 43.434497 });
+          callback();
+        }, { timeout: 5000 });
       } else {
         initializeInterface({ longitude: -79.709441, latitude: 43.434497 });
         callback();
