@@ -1,4 +1,4 @@
-# addin-heatmap
+# addin-heatmap ---
 This add-in is visualizes the location history of a vehicle by displaying areas of "heat" on a map corresponding to the frequency in which they were at a certain location using [leaflet](http://leafletjs.com/) and [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat).
 
 ## Installation
